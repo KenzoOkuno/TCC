@@ -1,0 +1,291 @@
+type: collection.insomnia.rest/5.0
+name: My Collection
+meta:
+  id: wrk_faab3c46b89c4b4580b5bccb0bd49cc3
+  created: 1743111965542
+  modified: 1743111965542
+collection:
+  - url: http://localhost:8080/cargos
+    name: /cargos
+    meta:
+      id: req_7649e69bf1454fc7b8593bdc78f7d936
+      created: 1743111976366
+      modified: 1743363974618
+      isPrivate: false
+      sortKey: -1743111976366
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"cargo": {
+        			"nomeCargo": "funcionario"
+        	}
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_fe5a775f0bc44aafa29a78d9dca004cc
+        disabled: false
+      - name: User-Agent
+        value: insomnia/9.1.0
+        id: pair_6cf390a9328c44f991bff7db9b6fed7e
+        type: text
+        multiline: false
+        disabled: false
+      - id: pair_7ebdd5cc4e38465e8f892d3d9a1ebe3f
+        name: Authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdCIsInN1YiI6ImFjZXNzb19zaXN0ZW1hIiwiaWF0IjoxNzQzMzU5NTY0LCJleHAiOjE3NDU5NTE1NjQsIm5iZiI6MTc0MzM1OTU2NCwianRpIjoiY2FkYjBmNzllZWJiNDU1NWYzMDUyZmI0ZTQ1ZjYyYjciLCJlbWFpbCI6IlBlZHJvQGVtYWlsLmNvbSIsInJvbGUiOiJ0ZWNuaWNvIiwibmFtZSI6IlBlZHJvIiwiaWRGdW5jaW9uYXJpbyI6NX0.uyMWp8QpaC9natEbOWbx_Cuiskwi_R2P2O7qM32JYUw
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/funcionarios
+    name: /funcionarios
+    meta:
+      id: req_e803af5e6acd430ea97195f353652097
+      created: 1743132429207
+      modified: 1743364004059
+      isPrivate: false
+      sortKey: -1743111976266
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"funcionario":{
+        		"nomeFuncionario": "",
+        		"email": "kenzo@email",
+        		"senha": "123",
+        		"idCargo": 9
+        	}
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/cargos/9
+    name: /cargos/id
+    meta:
+      id: req_1c1fdfad01b847a18fba1ca1e98b3023
+      created: 1743133438170
+      modified: 1743380259311
+      isPrivate: false
+      sortKey: -1743133185929.25
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/cargos/1
+    name: /cargos
+    meta:
+      id: req_9f085b9050ef466d91cb92b874b45e3a
+      created: 1743134786943
+      modified: 1743363944114
+      isPrivate: false
+      sortKey: -1743135127008
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"cargo": {
+        			"nomeCargo": "adm"
+        	 }
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/funcionarios/12
+    name: /funcionario
+    meta:
+      id: req_e110e40140694624a8b24c667dedd956
+      created: 1743135240363
+      modified: 1743364509044
+      isPrivate: false
+      sortKey: -1743135155346.75
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/funcionarios
+    name: /funcionarios
+    meta:
+      id: req_64e2d781bf8740a3a889a5825da46eb0
+      created: 1743348401874
+      modified: 1743362604427
+      isPrivate: false
+      sortKey: -1743132933688.5
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/funcionarios/1
+    name: /funcionarios
+    meta:
+      id: req_ece2160ee04e4980911c6af20eead1c1
+      created: 1743348821718
+      modified: 1743363959553
+      isPrivate: false
+      sortKey: -1743135013653
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"funcionario":{
+        		"nomeFuncionario": "kenzo",
+        		"email": "kenzo@email",
+        		"senha": "123",
+        		"idCargo": 1
+        	}
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/cargos/8
+    name: /cargos
+    meta:
+      id: req_b405361ff3274bd98f674fb608d78cb5
+      created: 1743349371777
+      modified: 1743363883320
+      isPrivate: false
+      sortKey: -1743135183685.5
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/funcionarios/login/
+    name: /login
+    meta:
+      id: req_82c536850b874c74ba7e1dd7480d0876
+      created: 1743355111944
+      modified: 1743369163677
+      isPrivate: false
+      sortKey: -1743111976216
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"funcionario":{
+        		"email": "kenzo@email",
+        		"senha": "123"
+        	}
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/visitantes/
+    name: /visitantes
+    meta:
+      id: req_88603c0cdd6f4f8fb31a9944b23a4992
+      created: 1743369095229
+      modified: 1743370890206
+      isPrivate: false
+      sortKey: -1743369095229
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.1
+        id: pair_f29e934d315647b080610b89d786c3f7
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdCIsInN1YiI6ImFjZXNzb19zaXN0ZW1hIiwiaWF0IjoxNzQzMzcwODU2LCJleHAiOjE3NDU5NjI4NTYsIm5iZiI6MTc0MzM3MDg1NiwianRpIjoiM2Y2ODMxOGNkMWMxMjljMWQ0Y2UyNDFjZWIzM2E2ZjQiLCJlbWFpbCI6ImtlbnpvQGVtYWlsIiwicm9sZSI6ImFkbSIsIm5hbWUiOiJrZW56byIsImlkRnVuY2lvbmFyaW8iOjF9.kcc0rxKt_Sige7fZ-3RZvFoCZ1rLQIicBySkBdrNHqA
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_e346f36b5a64f060b845262ea12469533f38783a
+    created: 1743111965552
+    modified: 1743111965552
+environments:
+  name: Base Environment
+  meta:
+    id: env_e346f36b5a64f060b845262ea12469533f38783a
+    created: 1743111965549
+    modified: 1743111965549
+    isPrivate: false
